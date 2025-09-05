@@ -1,0 +1,143 @@
+---
+import Layout from '../../layouts/Main.astro';
+import Quote from '../../components/Quote.astro';
+import BreadCrumbs from "../../components/BreadCrumbs.astro";
+import { Image } from 'astro:assets';
+
+// Images
+import hero from '../../assets/img/premium-accommodation-hero.jpg';
+import premiumAccommodation1 from '../../assets/img/premium-accommodation-1.jpg';
+import premiumAccommodation2 from '../../assets/img/premium-accommodation-2.jpg';
+import premiumAccommodation3 from '../../assets/img/premium-accommodation-3.jpg';
+
+---
+
+<Layout
+        title="Экскурсии"
+        heroImg={hero}
+        heroTitle="ПРЕМИАЛЬНОЕ РАЗМЕЩЕНИЕ <br> ПО ВСЕМУ МИРУ"
+>
+    <BreadCrumbs/>
+    <div class="container">
+        <section id="about">
+            <div class="container">
+                <h5 class="text-justify">
+                    Планируете деловую поездку или хотите отдохнуть? Команда профессионалов Limotis собрала целую коллекцию премиум-размещений по всему миру, которая доступна вам.<br>
+                    Мы знаем, что вы ждете от премиального обслуживания и с ювелирной точностью работаем с каждой заявкой. Конфиденциально, с безупречным сервисом и заботой о важных мелочах.
+                    <br><br>
+                    <b>Что мы предлагаем</b>
+                    <br><br>
+                    <ul class="list">
+                        <li>Индивидуальный подход: Каждый вариант подбирается с учетом ваших предпочтений.</li>
+                        <br><br>
+                        <li>Эстетика и комфорт: Мы предлагаем тщательно отобранные места, где каждая деталь продумана для вашего максимального удобства.</li>
+                        <br><br>
+                        <li>Эксклюзивные локации: Проживание в местах, которые оставляют самые яркие впечатления, будь то уединение среди природы или в центре городской жизни.</li>
+                        <br><br>
+                    </ul>
+                    Наслаждайтесь безупречным уровнем сервиса и исключительным комфортом в любой точке мира — ваше путешествие начинается с идеального места для отдыха.
+                </h5>
+            </div>
+        </section>
+        <Quote/>
+        <section id="planes">
+            <div class="container">
+                <h2 class="text-center">ЛУЧШИЕ ЛЫЖНЫЕ КУРОРТЫ</h2>
+                <div class="row img-right">
+                    <div class="text">
+                        <h5 class="text-justify">
+                            <b>Городские отели для комфортных деловых поездок</b>
+                            <br>
+                            В условиях деловой поездки особенно важно иметь возможность сосредоточиться на работе, не отвлекаясь на организационные мелочи. Мы подбираем городские отели, которые идеально подходят для деловых путешественников. Эти отели находятся в деловых районах, рядом с ключевыми транспортными узлами и корпоративными центрами, что обеспечивает удобный доступ к важным встречам и мероприятиям.
+                        </h5>
+                    </div>
+                    <Image src={premiumAccommodation1} alt=""/>
+                </div>
+                <div class="row img-left">
+                    <Image src={premiumAccommodation2} alt=""/>
+                    <div class="text">
+                        <h5 class="text-justify">
+                            <b>Курортные отели премиального уровня для отдыха</b>
+                            <br>
+                            Если вы ищете место для идеального отдыха, где можно полностью расслабиться и восстановить силы, курортные отели с высокими стандартами сервиса обеспечат вам незабываемое пребывание. Расположенные в самых красивых уголках мира, эти отели предлагают все, что нужно для качественного отдыха — от пляжей с белым песком до спа-процедур.
+                        </h5>
+                    </div>
+                </div>
+                <div class="row img-right">
+                    <div class="text">
+                        <h5 class="text-justify">
+                            <b>Виллы для спокойного уединения</b>
+                            <br>
+                            Когда хочется полностью абстрагироваться от внешнего мира и провести время в тишине, уединенные виллы — это идеальный выбор. Расположенные в живописных местах, таких как уединенные пляжи, горные долины или тропические леса, они позволяют почувствовать гармонию с природой, сохраняя при этом все удобства современного проживания.
+                        </h5>
+                    </div>
+                    <Image src={premiumAccommodation3} alt=""/>
+                </div>
+            </div>
+        </section>
+    </div>
+</Layout>
+<style lang="scss">
+
+  #about{
+    padding: 50px 0 75px 0;
+    .container{
+      max-width: 1170px;
+      margin: auto;
+    }
+  }
+
+  #planes{
+    padding: 100px 0 60px 0;
+    .container{
+      max-width: 1170px;
+      margin: auto;
+    }
+    h2{
+      margin-bottom: 100px;
+    }
+    .row{
+      display: flex;
+      align-items: center;
+      margin-bottom: 90px;
+      .text{
+        text-align: justify;
+        font-size: 20px;
+        line-height: 24.38px;
+        font-weight: 400;
+      }
+      &.img-right{
+        img{
+          right: 0;
+          margin-left: 150px;
+        }
+      }
+      &.img-left{
+        img{
+          left: 0;
+          margin-right: 150px;
+        }
+        .name{
+          transform: rotate(180deg);
+          left: -30px;
+        }
+        justify-content: right;
+      }
+      .header-text{
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 30px;
+      }
+      h5{
+        margin-bottom: 0;
+        text-align: justify;
+      }
+      img{
+        width: 451px;
+        height: 426px;
+        box-shadow: 0px 0px 42px 0px rgba(0, 0, 0, 0.75);
+
+      }
+    }
+  }
+</style>

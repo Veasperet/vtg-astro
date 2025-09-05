@@ -1,0 +1,397 @@
+---
+import Layout from '../../../../layouts/Main.astro';
+import Quote from '../../../../components/Quote.astro';
+import BreadCrumbs from "../../../../components/BreadCrumbs.astro";
+import { Image } from 'astro:assets';
+
+//Image
+import hero from '../../../../assets/img/sofitel-ambassador-hero.jpg';
+import sofitel_ambassador_1 from '../../../../assets/img/sofitel-ambassador-1.jpg';
+import sofitel_ambassador_2 from '../../../../assets/img/sofitel-ambassador-2.jpg';
+import OutdoorWhirlpool_1 from '../../../../assets/img/OutdoorWhirlpool 1.jpg';
+import SwimmingPool02_1 from '../../../../assets/img/SwimmingPool02 1.jpg';
+import Luxury_Lake_bathroom_3 from '../../../../assets/img/Luxury Lake_bathroom 3.jpg';
+import Club_Luxury_Room_1 from '../../../../assets/img/Club Luxury Room 1.jpg';
+import Fitness_5th_02_1 from '../../../../assets/img/5th Fitness_02 1.jpg';
+import Concorde_U_shape02_1 from '../../../../assets/img/Concorde_U shape02 1.jpg';
+import Fait_Maison_The_Oven_Copy_1 from '../../../../assets/img/Fait Maison_The Oven - Copy 1.jpg';
+import Club_Millesime_01_1 from '../../../../assets/img/Club_Millesime_01 1.jpg';
+import Club_Millesime_1 from '../../../../assets/img/Club_Millesime 1.jpg';
+import Club_Millesime_03_1 from '../../../../assets/img/Club _Millesime_03 1.jpg';
+---
+
+<Layout
+        title="Ностальгия отель"
+        heroImg={hero}
+>
+    <BreadCrumbs/>
+    <section id="about">
+        <div class="container">
+            <h1 class="text-center">Sofitel Ambassador Seoul Hotel & Serviced Residences</h1>
+            <hr>
+            <div class="row">
+                <div class="text right-gap">
+                    <p class="text-justify">
+                        Sofitel Ambassador, расположенный в сердце Сеула, славится своим неповторимым сочетанием французского шика и корейского
+                        гостеприимства. Это проявляется в каждом аспекте отеля, начиная с дизайна интерьеров и заканчивая обслуживанием. В отеле
+                        можно найти элегантные французские элементы, гармонично сочетающиеся с традиционными корейскими мотивами, создавая
+                        уникальную и уютную атмосферу.<br><br>
+                        Номера в отеле представляют собой образец непревзойденного стиля. В каждом из них
+                        предусмотрены современные удобства, а большие окна открывают потрясающие панорамные виды на Сеул. Данная особенность
+                        усиливает ощущение пребывания в одном из самых красивых городов мира, создавая неповторимую атмосферу.<br><br>
+                        В Sofitel
+                        Ambassador представлены рестораны, предлагающие разнообразные кулинарные изыски. Особое внимание стоит уделить
+                        французскому ресторану, где гости могут насладиться блюдами, приготовленными по традиционным рецептам. Помимо этого,
+                        отель предлагает попробовать местные корейские деликатесы, что позволяет гостям погрузиться в гастрономическую культуру
+                        страны.
+                    </p>
+                </div>
+                <div class="img">
+                    <Image src={sofitel_ambassador_1} alt=""/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="img right-gap">
+                    <Image src={sofitel_ambassador_2} alt=""/>
+                </div>
+                <div class="text">
+                    <p class="text-justify">
+                        Отель предоставляет широкий спектр услуг для релаксации и восстановления сил. Современный спа-центр предлагает
+                        разнообразные оздоровительные процедуры, а фитнес-центр и бассейн помогут поддерживать физическую форму. <br><br>
+
+                        Sofitel Ambassador является идеальным местом для проведения деловых встреч и торжественных мероприятий. Конференц-залы
+                        оснащены самым современным оборудованием и могут вместить как небольшие деловые встречи, так и крупные корпоративные
+                        события. Профессиональная команда отеля всегда готова помочь с организацией мероприятия на высшем уровне.<br><br>
+
+                        Расположение отеля в самом сердце Сеула позволяет гостям легко добраться до главных достопримечательностей города.
+                        Дворец Кёнбоккун, рынок Намдэмун и торговый район Мёндон находятся в непосредственной близости. Это делает отель
+                        идеальной отправной точкой для знакомства с городом и его культурой.<br><br>
+                        Sofitel Ambassador – не просто отель, это настоящий оазис, где каждый гость сможет почувствовать себя особенным.
+                        Независимо от цели вашего визита, этот отель обеспечит незабываемые впечатления и высокий уровень сервиса.
+                    </p>
+                </div>
+            </div>
+            <hr class="hr-2">
+            <div class="amenities-and-services">
+                <p class="text-center">ДОСТУПНЫЕ УДОБСТВА И УСЛУГИ</p>
+                <div class="row-amenities-and-services">
+                    <div class="el">
+                        <img src="/img/wifi.svg" alt="">
+                        <span>Wi-Fi</span>
+                    </div>
+                    <div class="el">
+                        <img src="/img/breakfast.svg" alt="">
+                        <span>Завтрак</span>
+                    </div>
+                    <div class="el">
+                        <img src="/img/gym.svg" alt="">
+                        <span>Фитнес-центр</span>
+                    </div>
+                    <div class="el">
+                        <img src="/img/bar.svg" alt="">
+                        <span>Бар</span>
+                    </div>
+                    <div class="el">
+                        <img src="/img/parking.svg" alt="">
+                        <span>Бесплатная парковка</span>
+                    </div>
+                    <div class="el">
+                        <img src="/img/spa.svg" alt="">
+                        <span>Оздоровительный<br>центр и спа</span>
+                    </div>
+                    <div class="el">
+                        <img src="/img/car-2.svg" alt="">
+                        <span>Трансфер от/до<br>аеропорта</span>
+                    </div>
+                    <div class="el">
+                        <img src="/img/invalid.svg" alt="">
+                        <span>Удобства для гостей<br>с ограниченными<br>возможностями</span>
+                    </div>
+                    <div class="el">
+                        <img src="/img/pool.svg" alt="">
+                        <span>Крытый бассейн</span>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="gallery">
+                <p class="text-center title">Sofitel Ambassador Seoul Hotel & Serviced Residences</p>
+                <p class="text-center"><b>209, Jamsil-ro, Songpa-gu, Сонпха-гу, 05552 Сеул, Южная Корея – <a target="_blank" href="https://www.google.com/maps/place/소피텔+앰배서더+서울+호텔+%26+서비스드+레지던스/@37.5135527,127.1037194,17z/data=!4m9!3m8!1s0x357ca57e98b59f95:0x690ff6cec8e678eb!5m2!4m1!1i2!8m2!3d37.5135527!4d127.1062943!16s%2Fg%2F11rs1ng58_?entry=ttu">Расположение</a></b></p>
+                <div class="grid-gallery">
+                    <div class="fr"><Image src={OutdoorWhirlpool_1} alt=""/></div>
+                    <div class="fr"><Image src={SwimmingPool02_1} alt=""/></div>
+                    <div class="fr"><Image src={Luxury_Lake_bathroom_3} alt=""/></div>
+                    <div class="fr"><Image src={Club_Luxury_Room_1} alt=""/></div>
+                    <div class="fr"><Image src={Fitness_5th_02_1} alt=""/></div>
+                    <div class="fr"><Image src={Concorde_U_shape02_1} alt=""/></div>
+                    <div class="fr"><Image src={Fait_Maison_The_Oven_Copy_1} alt=""/></div>
+                    <div class="fr"><Image src={Club_Millesime_01_1} alt=""/></div>
+                    <div class="fr"><Image src={Club_Millesime_1} alt=""/></div>
+                    <div class="fr"><Image src={Club_Millesime_03_1} alt=""/></div>
+                </div>
+                <hr>
+            </div>
+            <div class="rating-section">
+                <p class="title">ОЦЕНКА ЗА ДАННЫМИ GOOGLE</p>
+                <div class="inner-container">
+                    <div class="rating">
+                        <h1>4.6</h1>
+                        <img src="/img/sofitel-ambasador-stars.svg" alt="">
+                    </div>
+                    <div class="reviews">
+                        <div class="review">
+                            <div class="user-info">
+                                <div class="number-rating">5</div>
+                                <div class="name">Victoria</div>
+                            </div>
+                            <div class="text">Я просто получила массу удовольствия в этом отеле. Персонал был просто прекрасным. Сервис на высшем уровне.</div>
+                        </div>
+                        <div class="review">
+                            <div class="user-info">
+                                <div class="number-rating">4.5</div>
+                                <div class="name">Olga</div>
+                            </div>
+                            <div class="text">Хороший отель с прекрасным расположением. Красивый лаундж с прекрасным видом на город. Отличный бассейн.</div>
+                        </div>
+                        <div class="review">
+                            <div class="user-info">
+                                <div class="number-rating">4.5</div>
+                                <div class="name">Michael</div>
+                            </div>
+                            <div class="text">Сам отель и номер были безупречны. Большой и чистый, с великолепным видом.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>
+
+<style lang="scss">
+  #hero {
+    width: 100%;
+    height: 100vh;
+    background-color: #0000007D;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    position: relative;
+
+    .background-image {
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-position: center;
+      z-index: -1;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 300px;
+      bottom: 0;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgb(255 255 255 / 66%) 85%, rgb(255, 255, 255) 100%);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      width: 100%;
+    }
+  }
+
+  #about {
+    padding: 100px 0 50px 0;
+
+    .container {
+      max-width: 1170px;
+      margin: auto;
+      hr{
+        border-color: black;
+        margin: 25px 0;
+      }
+      .hr-2{
+        margin-top: 40px;
+        margin-bottom: 50px;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        margin-top: 60px;
+        padding: 0 20px;
+        .right-gap {
+          margin-right: 65px;
+        }
+
+        .img {
+          min-width: 392px;
+          height: 376px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          box-shadow: 0px 0px 42px 0px rgba(0, 0, 0, 0.75);
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      .amenities-and-services {
+        margin-top: 60px;
+
+        p {
+          margin-bottom: 60px;
+          font-weight: 700;
+          font-size: 36px;
+        }
+
+        .row-amenities-and-services {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          align-items: baseline;
+          .el{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-bottom: 57px;
+            text-align: center;
+            img{
+              margin-bottom: 8px;
+            }
+          }
+        }
+        hr{
+          margin-top: 0;
+          margin-bottom: 50px;
+        }
+      }
+
+      .gallery{
+        .title{
+          font-size: 36px;
+          font-weight: 700;
+          line-height: 43.88px;
+        }
+      }
+      .gallery{
+        .grid-gallery{
+          margin-top: 40px;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          row-gap: 20px;
+          column-gap: 25px;
+          max-width: 1051px;
+          margin-left: auto;
+          margin-right: auto;
+          .fr{
+            width: fit-content;
+          }
+        }
+        hr{
+          margin: 50px 0;
+        }
+      }
+      .rating-section{
+        padding: 0 20px;
+        .title{
+          font-size: 36px;
+          font-weight: 700;
+        }
+        .inner-container{
+          max-width: 980px;
+          margin-left: auto;
+          margin-right: auto;
+          .rating{
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            h1{
+              margin-right: 40px;
+            }
+          }
+          .reviews{
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            .review{
+              padding: 20px 20px 0 20px;
+              width: 300px;
+              height: 164px;
+              background: #F3F3F3;
+              border-radius: 13px;
+              box-shadow: 0px 4px 4px 0px #00000040;
+              box-sizing: border-box;
+              .user-info{
+                display: flex;
+                align-items: center;
+                margin-left: 10px;
+                margin-bottom: 15px;
+                .number-rating{
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  font-size: 20px;
+                  font-weight: 400;
+                  margin-right: 10px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  background-color: #D9D9D9;
+                  font-weight: 500;
+                }
+                .name{
+                  font-size: 16px;
+                  font-weight: 500;
+                }
+              }
+              .text{
+                text-align: center;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 15.85px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .bread-crumbs{
+    padding-top: 50px;
+    padding-left: 50px;
+    ul{
+      display: flex;
+      list-style: none;
+      align-items: center;
+      li{
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+        a{
+          color: black;
+          text-decoration: none;
+        }
+        &::before{
+          content: url(../img/arrow.svg);
+          width: 15px;
+          display: block;
+          margin-right: 20px;
+        }
+        &:first-child::before{
+          display: none;
+        }
+      }
+    }
+  }
+</style>

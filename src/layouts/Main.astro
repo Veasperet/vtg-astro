@@ -1,0 +1,54 @@
+---
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import Hero from '../components/Hero.astro';
+
+const { title,
+	description = 'Limotis Travel – надежный партнер в мире элитных путешествиях, предлагающий эксклюзивные маршруты, роскошь и комфорт по всему миру. ',
+	heroImg,
+	heroTitle,
+	showButton = false,
+	textCenter = true,
+	heroImageQuality = 100
+} = Astro.props;
+---
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/img/favicon.ico" />
+
+		<title>{title}</title>
+		<meta name="description" content={description} />
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+		<!-- Slider -->
+		<link rel="stylesheet" href="/splide/splide.min.css">
+		<script is:inline src="/splide/splide.min.js"></script>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<Hero
+				img = {heroImg}
+				title = {heroTitle}
+				heroTitle = {heroTitle}
+				showButton = {showButton}
+				textCenter = {textCenter}
+				ImageQuality = {heroImageQuality}
+			/>
+			<slot />
+		</main>
+		<Footer/>
+	</body>
+</html>
+
+<style is:global lang="scss">
+@import '../styles/default.scss';
+@import '../styles/reset.css';
+</style>

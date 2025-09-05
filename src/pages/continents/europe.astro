@@ -1,0 +1,221 @@
+---
+import Layout from '../../layouts/Main.astro';
+import Quote from '../../components/Quote.astro';
+import BreadCrumbs from "../../components/BreadCrumbs.astro";
+import { Image } from 'astro:assets';
+import AnimHref from '../../components/MiniComponents/AnimHref.astro';
+
+//Images
+import hero from '../../assets/img/europa-hero.jpg';
+import great_britan_europe from '../../assets/img/great-britan-europe.png';
+import france_europe from '../../assets/img/france-europe.png';
+import spain_europe from '../../assets/img/spain-europe.png';
+import italy_europe from '../../assets/img/italy-europe.png';
+import monaco_europe from '../../assets/img/monaco-europe.png';
+import germany_europe from '../../assets/img/germany-europe.png';
+import switzerland_britan_europe from '../../assets/img/switzerland-britan-europe.png';
+import poland_europe from '../../assets/img/poland-europe.png';
+import netherlands_europe from '../../assets/img/netherlands-europe.png';
+import img1 from '../../assets/img/ae6fdee800d0b1911cfe8241e0800907.jpg';
+import img2 from '../../assets/img/0a679328f0056acdc9883f8505910dac.jpg';
+---
+
+<Layout
+        title="Европа"
+        heroImg={hero}
+        heroTitle="ЕВРОПА"
+>
+    <BreadCrumbs/>
+    <section id="about">
+        <div class="container">
+            <h5 class="text-justify">Европа предлагает разнообразие культур, истории и природных красот, что делает её идеальным направлением для путешествий.<br> Каждый уголок континента уникален – от средневековых замков и уютных деревень до современных мегаполисов, кипящие жизнью.</h5>
+            <div class="row">
+                <div class="text right-gap">
+                    <p class="text-justify">
+                        <b>Культурное наследие и история </b><br>
+                        Европа славится своим богатым культурным наследием. Прогулки по улочкам Рима или Парижа перенесут вас в прошлое, а экскурсии по музеям и галереям позволят насладиться шедеврами мирового искусства.<br><br>
+                        <b>Разнообразие природы</b><br>
+                        От заснеженных <a href="/continents/europe/alps">Альп</a> до живописных пляжей Средиземноморья – Европа поражает своим природным разнообразием. Здесь можно кататься на лыжах зимой, отдыхать у моря летом, а осенью наслаждаться прогулками по виноградникам и национальным паркам
+                    </p>
+                </div>
+                <div class="img">
+                    <Image src={img1} alt="" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="img right-gap">
+                    <Image src={img2} alt="" />
+                </div>
+                <div class="text">
+                    <p class="text-justify">
+                        <b>Гастрономия</b><br>
+                        Европейская кухня известна на весь мир. В каждом регионе вас ждут кулинарные открытия – от изысканных французских блюд до свежих морепродуктов Греции и Италии. Путешествуя по Европе, вы сможете попробовать все самые известные и вкусные национальные блюда.
+                        <br><br>
+                        <b>Современные города </b><br>
+                        Помимо древних городов, Европа предлагает множество современных мегаполисов, таких как Лондон, Берлин и Барселона. Здесь вы найдете все – от модных бутиков и ресторанов высокой кухни до инновационных технологических центров.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="countries-details">
+        <div class="container">
+            <h2 class="text-center">ИССЛЕДУЙТЕ СТРАНЫ <br> ЕВРОПЫ ВМЕСТЕ С НАМИ</h2>
+            <div class="row img-right">
+                <div class="text">
+                    <div class="header-text"><AnimHref href="/continents/europe/great-britain">Великобритания</AnimHref></div>
+                    <h5>Великобритания – страна с богатой историей, культурным наследием и невероятным разнообразием достопримечательностей. Здесь каждый найдет что-то для себя: от величественных дворцов и старинных замков до современных музеев и живописных ландшафтов. Прогулки по Лондону откроют вам символы страны, такие как Тауэрский мост, Биг Бен и Букингемский дворец, а уютные деревни в провинциях перенесут вас в атмосферу английской старины.</h5>
+                </div>
+                <div class="img"><Image src={great_britan_europe} alt="" width={837} height={381} /></div>
+            </div>
+            <div class="row img-left">
+                <div class="text">
+                    <div class="header-text"><AnimHref href="#">Франция</AnimHref></div>
+                    <h5>Франция – это страна, которая очаровывает своей богатой культурой и разнообразием. Париж, с его величественной архитектурой, известными музеями, такими как Лувр и Орсе, и романтическими улочками, считается одним из самых красивых городов мира. Но Франция – это не только столица. Каждая её область предлагает уникальные впечатления: виноградники Бордо, лазурное побережье Ниццы, средневековые замки долины Луары и альпийские курорты.</h5>
+                </div>
+                <div class="img"><Image src={france_europe} alt="" width={837} height={381} /></div>
+            </div>
+            <div class="row img-right">
+                <div class="text">
+                    <div class="header-text"><AnimHref href="#">Испания</AnimHref></div>
+                    <h5>Испания – это страна ярких красок, богатых традиций и впечатляющего разнообразия. Каждый уголок Испании предлагает что-то особенное: от динамичной атмосферы Барселоны с её шедеврами Гауди до исторических улиц Мадрида, где сосредоточены одни из лучших музеев Европы. Для любителей пляжного отдыха Испания славится своими потрясающими курортами на побережьях Коста-Брава и Коста-дель-Соль, а также Канарскими и Балеарскими островами.</h5>
+                </div>
+                <div class="img"><Image src={spain_europe} alt="" width={837} height={381} /></div>
+            </div>
+            <div class="row img-left">
+                <div class="text">
+                    <div class="header-text"><AnimHref href="#">Италия</AnimHref></div>
+                    <h5>Италия – это страна, где история, искусство и природа сливаются в единое целое. Здесь вас ждут древние руины Рима, величественные соборы Милана и Флоренции, а также узкие каналы Венеции, которые дарят неповторимую атмосферу романтики. Каждая итальянская область имеет свою уникальную культуру и характер, будь то живописные виноградники Тосканы, солнечные побережья Амальфи или заснеженные вершины Альп.</h5>
+                </div>
+                <div class="img"><Image src={italy_europe} alt="" width={837} height={381} /></div>
+            </div>
+            <div class="row img-right">
+                <div class="text">
+                    <div class="header-text"><AnimHref href="#">Монако</AnimHref></div>
+                    <h5>Монако – это маленькое, но удивительно роскошное княжество на Лазурном берегу, которое очаровывает своими захватывающими видами и атмосферой. Город-государство славится своими фешенебельными курортами, яхтами и казино Монте-Карло, где можно ощутить истинный дух гламура. Несмотря на свои небольшие размеры, Монако предлагает множество интересных достопримечательностей, таких как Княжеский дворец, Океанографический музей и живописные сады.</h5>
+                </div>
+                <div class="img"><Image src={monaco_europe} alt="" width={837} height={381} /></div>
+            </div>
+            <div class="row img-left">
+                <div class="text">
+                    <div class="header-text"><AnimHref href="#">Германия</AnimHref></div>
+                    <h5>Германия – это страна с богатым культурным наследием, разнообразными пейзажами и современными мегаполисами. В каждой ее части можно найти уникальные достопримечательности: от средневековых замков Баварии, до исторического Берлина с его Музейным островом. Мюнхен привлекает туристов не только своей архитектурой, но и всемирно известным праздником Октоберфест, а живописные долины Рейна — своими виноградниками и старинными городами.</h5>
+                </div>
+                <div class="img"><Image src={germany_europe} alt="" width={837} height={381} /></div>
+            </div>
+            <div class="row img-right">
+                <div class="text">
+                    <div class="header-text"><AnimHref href="#">Швейцария</AnimHref></div>
+                    <h5>Швейцария – это страна потрясающих природных пейзажей, высоких Альпийских вершин и кристально чистых озёр. Любители активного отдыха найдут здесь лучшие горнолыжные курорты, такие как Церматт и Санкт-Мориц, где можно насладиться первоклассными спусками и панорамными видами. Летом горы превращаются в идеальное место для пеших прогулок и альпинизма, а живописные деревни и города, такие как Люцерн и Интерлакен, предлагают умиротворение и комфорт.</h5>
+                </div>
+                <div class="img"><Image src={switzerland_britan_europe} alt="" width={837} height={381} /></div>
+            </div>
+            <div class="row img-left">
+                <div class="text">
+                    <div class="header-text"><AnimHref href="#">Польша</AnimHref></div>
+                    <h5>Польша – это страна с богатой историей, уникальной культурой и разнообразными природными ландшафтами. Величественные города, такие как Краков, Варшава и Вроцлав, предлагают интересное сочетание старинной архитектуры и современной жизни. Краков, с его великолепным замком Вавель и средневековой Рыночной площадью, переносит в атмосферу прошлого, а Варшава удивляет своей восстановленной после войны архитектурой и современным ритмом жизни.</h5>
+                </div>
+                <div class="img"><Image src={poland_europe} alt="" width={837} height={381} /></div>
+            </div>
+            <div class="row img-right">
+                <div class="text">
+                    <div class="header-text"><AnimHref href="#">Нидерланды</AnimHref></div>
+                    <h5>Нидерланды – это страна живописных каналов, бесконечных полей тюльпанов и богатого культурного наследия. Амстердам, со своими узкими улочками, домами вдоль каналов и знаменитыми музеями, такими как Рейксмузеум и музей Ван Гога, предлагает погружение в искусство и историю. В Нидерландах вы также найдете традиционные ветряные мельницы и уютные деревушки, такие как Заансе Сханс, где можно узнать больше о национальных ремеслах и традициях.</h5>
+                </div>
+                <div class="img"><Image src={netherlands_europe} alt="" width={837} height={381} /></div>
+            </div>
+        </div>
+    </section>
+</Layout>
+
+<style lang="scss">
+  #about{
+    margin-bottom: 140px;
+    .container {
+      max-width: 1170px;
+      margin: auto;
+      padding-top: 60px;
+      h5{
+        margin-bottom: 55px;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        .right-gap {
+          margin-right: 70px;
+        }
+
+        .img {
+          min-width: 451px;
+          height: 381px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+          overflow: hidden;
+          img{
+            height: 100%;
+            width: auto;
+          }
+        }
+        p{
+          line-height: 24.38px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  #countries-details{
+    margin-top: 20px;
+    padding-bottom: 200px;
+    .container{
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      h2{
+        margin-bottom: 70px;
+      }
+      h5{
+        margin-bottom: 100px;
+      }
+      .row{
+        display: flex;
+        align-items: center;
+        margin-bottom: 120px;
+        .img{
+          position: absolute;
+          img{
+            max-width: 837px;
+          }
+
+        }
+        .text{
+          width: 50%;
+        }
+        &.img-right{
+          .img{
+            right: 0;
+          }
+        }
+        &.img-left{
+          .img{
+            left: 0;
+          }
+          justify-content: right;
+        }
+        .header-text{
+          font-size: 32px;
+          font-weight: 700;
+          margin-bottom: 30px;
+
+        }
+        h5{
+          margin-bottom: 0;
+          text-align: justify;
+        }
+      }
+    }
+  }
+</style>

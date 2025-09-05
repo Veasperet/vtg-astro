@@ -1,0 +1,407 @@
+---
+import Layout from '../../../../layouts/Main.astro';
+import Quote from '../../../../components/Quote.astro';
+import BreadCrumbs from "../../../../components/BreadCrumbs.astro";
+import { Image } from 'astro:assets';
+//Images
+import hero from '../../../../assets/img/conrad-seoul-hero.jpg';
+import conrad_seoul_1 from '../../../../assets/img/conrad-seoul-1.jpg';
+import conrad_seoul_2 from '../../../../assets/img/conrad-seoul-2.jpg';
+import photo1 from '../../../../assets/img/[Conrad Seoul] VVERTIGO_Indoor 1.jpg';
+import photo2 from '../../../../assets/img/ExecutiveQueenBathroom01 1.jpg';
+import photo3 from '../../../../assets/img/SpaConcertationArea01 1.jpg';
+import photo4 from '../../../../assets/img/[Conrad Seoul] VVERTIGO_Entrance 1.jpg';
+import photo5 from '../../../../assets/img/SpaLounge 1.jpg';
+import photo6 from '../../../../assets/img/Lobby 1.jpg';
+import photo7 from '../../../../assets/img/Conrad Seoul_Spiral Staircase 1.jpg';
+import photo8 from '../../../../assets/img/Concierge 1.jpg';
+import photo9 from '../../../../assets/img/ExecutiveLounge02 1.jpg';
+import photo10 from '../../../../assets/img/37BarandGrill02 1.jpg';
+import photo11 from '../../../../assets/img/Zest02 1.jpg';
+import photo12 from '../../../../assets/img/Conrad Seoul_The Noodle Bar 1.jpg';
+import photo13 from '../../../../assets/img/VvertigoExterior03 1.jpg';
+import photo14 from '../../../../assets/img/Conrad Seoul_10G 1.jpg';
+---
+
+<Layout
+        title="Конрад Сеул"
+        heroImg={hero}
+>
+    <BreadCrumbs/>
+    <section id="about">
+        <div class="container">
+            <h1 class="text-center">Conrad Seoul</h1>
+            <hr>
+            <div class="row">
+                <div class="text right-gap">
+                    <p class="text-justify">
+                        Отель Conrad Seoul, расположенный в престижном районе Йоидо, в центре делового квартала Сеула, предлагает своим гостям
+                        неповторимую атмосферу. Каждая деталь здесь продумана до мелочей, создавая уникальный визуальный опыт, который начинает
+                        поражать уже с момента входа в отель.<br> <br>
+
+                        Номера в отеле Conrad Seoul представляют собой образец непревзойденного комфорта и стиля. В каждом номере предусмотрены
+                        современные удобства, такие как большой телевизор, мини-бар, высокоскоростной интернет и роскошные ванные комнаты.
+                        Панорамные окна открывают потрясающие виды на реку Ханган и городской пейзаж Сеула, что создает неповторимую атмосферу
+                        спокойствия и уюта. <br><br>
+
+                        Отель предлагает своим гостям разнообразие кулинарных шедевров в нескольких ресторанах и барах. В Conrad Seoul можно
+                        насладиться как международной, так и традиционной корейской кухней. Рестораны отеля славятся своими блюдами,
+                        приготовленными из свежих и качественных продуктов, а изысканная обстановка добавляет особый шарм каждому приему пищи.
+                    </p>
+                </div>
+                <div class="img">
+                    <Image src={conrad_seoul_1} alt=""/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="img right-gap">
+                    <Image src={conrad_seoul_2} alt=""/>
+                </div>
+                <div class="text">
+                    <p class="text-justify">
+                        Conrad Seoul предоставляет своим гостям превосходные возможности для отдыха и оздоровления. Современный фитнес-центр
+                        оснащен самым современным оборудованием, а спа-салон предлагает разнообразные процедуры для расслабления и
+                        восстановления сил. Крытый бассейн с панорамным видом на город является идеальным местом для отдыха после насыщенного
+                        дня. <br><br>
+
+                        Отель Conrad Seoul является идеальным местом для проведения деловых встреч, конференций и торжественных мероприятий.
+                        Современные конференц-залы и залы для переговоров оснащены новейшими технологиями и могут вместить как небольшие деловые
+                        встречи, так и крупные корпоративные мероприятия. Профессиональная команда отеля гарантирует безупречную организацию
+                        любого события. <br><br>
+
+                        Расположенный в сердце делового квартала Йоидо, Conrad Seoul предлагает своим гостям легкий доступ к основным
+                        достопримечательностям и транспортным узлам города. Близость к финансовым учреждениям, торговым центрам и
+                        развлекательным заведениям делает этот отель идеальным выбором как для деловых путешественников, так и для туристов,
+                        желающих исследовать Сеул. <br><br>
+
+                    </p>
+                </div>
+            </div>
+            <hr class="hr-2">
+            <div class="amenities-and-services">
+                <p class="text-center">ДОСТУПНЫЕ УДОБСТВА И УСЛУГИ</p>
+                <div class="row-amenities-and-services">
+                    <div class="el">
+                        <img src="/img/wifi.svg" alt="">
+                        <span>Wi-Fi</span>
+                    </div>
+                    <div class="el">
+                        <img src="/img/breakfast.svg" alt="">
+                        <span>Завтрак</span>
+                    </div>
+                    <div class="el">
+                        <img src="/img/gym.svg" alt="">
+                        <span>Фитнес-центр</span>
+                    </div>
+                    <div class="el">
+                        <img src="/img/bar.svg" alt="">
+                        <span>Бар</span>
+                    </div>
+                    <div class="el">
+                        <img src="/img/parking.svg" alt="">
+                        <span>Бесплатная парковка</span>
+                    </div>
+                    <div class="el">
+                        <img src="/img/spa.svg" alt="">
+                        <span>Оздоровительный<br>центр и спа</span>
+                    </div>
+                    <div class="el">
+                        <img src="/img/pet.svg" alt="">
+                        <span>Можно с<br>питомцами</span>
+                    </div>
+                    <div class="el">
+                        <img src="/img/invalid.svg" alt="">
+                        <span>Удобства для гостей<br>с ограниченными<br>возможностями</span>
+                    </div>
+                    <div class="el">
+                        <img src="/img/pool.svg" alt="">
+                        <span>Крытый бассейн</span>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="gallery">
+                <p class="text-center title">Conrad Seoul</p>
+                <p class="text-center"><b>10, Gukjegeumyung-ro, Yeongdeungpo-gu, Йондынпхогу, 07326 Сеул, Южная Корея – <a target="_blank" href="https://www.google.com/maps/place/Conrad+Seoul/@37.5253385,126.92398,17z/data=!3m1!4b1!4m9!3m8!1s0x357c9f3bedaef86d:0x870e91c402860ad2!5m2!4m1!1i2!8m2!3d37.5253343!4d126.9265549!16s%2Fg%2F11bwn5psz4?entry=ttu">Расположение</a></b></p>
+                <div class="grid-gallery">
+                    <div class="fr"><Image  src={photo1} alt="" /></div>
+                    <div class="fr"><Image  src={photo2} alt="" /></div>
+                    <div class="fr"><Image  src={photo3} alt="" /></div>
+                    <div class="fr"><Image  src={photo4} alt="" /></div>
+                    <div class="fr"><Image  src={photo5} alt="" /></div>
+                    <div class="fr"><Image  src={photo6} alt="" /></div>
+                    <div class="fr"><Image  src={photo7} alt="" /></div>
+                    <div class="fr"><Image  src={photo8} alt="" /></div>
+                    <div class="fr"><Image  src={photo9} alt="" /></div>
+                    <div class="fr"><Image  src={photo10} alt="" /></div>
+                    <div class="fr"><Image  src={photo11} alt="" /></div>
+                    <div class="fr"><Image  src={photo12} alt="" /></div>
+                    <div class="fr"><Image  src={photo13} alt="" /></div>
+                    <div class="fr"><Image  src={photo14} alt="" /></div>
+                </div>
+                <hr>
+            </div>
+            <div class="rating-section">
+                <p class="title">ОЦЕНКА ЗА ДАННЫМИ GOOGLE</p>
+                <div class="inner-container">
+                    <div class="rating">
+                        <h1>4,4</h1>
+                        <img src="/img/conrad-seul-stars.svg" alt="">
+                    </div>
+                    <div class="reviews">
+                        <div class="review">
+                            <div class="user-info">
+                                <div class="number-rating">4.5</div>
+                                <div class="name">Peter</div>
+                            </div>
+                            <div class="text">Понравились удобства и услуги консьержа. Далеко добираться до города. Нам потребовался час, чтоб добраться до Гангама.</div>
+                        </div>
+                        <div class="review">
+                            <div class="user-info">
+                                <div class="number-rating">5</div>
+                                <div class="name">Artem</div>
+                            </div>
+                            <div class="text">Отель имеет современную и шикарную атмосферу, комнаты довольно просторные</div>
+                        </div>
+                        <div class="review">
+                            <div class="user-info">
+                                <div class="number-rating">4</div>
+                                <div class="name">Michael</div>
+                            </div>
+                            <div class="text">Дружелюбный персонал. Не понравилось, что заселение аж в 16:00, это на 2 часа позже от других отелей.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>
+
+<style lang="scss">
+  #hero {
+    width: 100%;
+    height: 100vh;
+    background-color: #0000007D;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    position: relative;
+
+    .background-image {
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-position: center;
+      z-index: -1;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 300px;
+      bottom: 0;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgb(255 255 255 / 66%) 85%, rgb(255, 255, 255) 100%);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      width: 100%;
+    }
+  }
+
+  #about {
+    padding: 100px 0 50px 0;
+
+    .container {
+      max-width: 1170px;
+      margin: auto;
+      hr{
+        border-color: black;
+        margin: 25px 0;
+      }
+      .hr-2{
+        margin-top: 40px;
+        margin-bottom: 50px;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        margin-top: 60px;
+        padding: 0 20px;
+        .right-gap {
+          margin-right: 65px;
+        }
+
+        .img {
+          min-width: 392px;
+          height: 376px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          box-shadow: 0px 0px 42px 0px rgba(0, 0, 0, 0.75);
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      .amenities-and-services {
+        margin-top: 60px;
+
+        p {
+          margin-bottom: 60px;
+          font-weight: 700;
+          font-size: 36px;
+        }
+
+        .row-amenities-and-services {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          align-items: baseline;
+          .el{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-bottom: 57px;
+            text-align: center;
+            img{
+              margin-bottom: 8px;
+            }
+          }
+        }
+        hr{
+          margin-top: 0;
+          margin-bottom: 50px;
+        }
+      }
+
+      .gallery{
+        .title{
+          font-size: 36px;
+          font-weight: 700;
+          line-height: 43.88px;
+        }
+      }
+      .gallery{
+        .grid-gallery{
+          margin-top: 40px;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          row-gap: 20px;
+          column-gap: 25px;
+          max-width: 1051px;
+          margin-left: auto;
+          margin-right: auto;
+          .fr{
+            width: fit-content;
+          }
+        }
+        hr{
+          margin: 50px 0;
+        }
+      }
+      .rating-section{
+        padding: 0 20px;
+        .title{
+          font-size: 36px;
+          font-weight: 700;
+        }
+        .inner-container{
+          max-width: 980px;
+          margin-left: auto;
+          margin-right: auto;
+          .rating{
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            h1{
+              margin-right: 40px;
+            }
+          }
+          .reviews{
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            .review{
+              padding: 20px 20px 0 20px;
+              width: 300px;
+              height: 164px;
+              background: #F3F3F3;
+              border-radius: 13px;
+              box-shadow: 0px 4px 4px 0px #00000040;
+              box-sizing: border-box;
+              .user-info{
+                display: flex;
+                align-items: center;
+                margin-left: 10px;
+                margin-bottom: 15px;
+                .number-rating{
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  font-size: 20px;
+                  font-weight: 400;
+                  margin-right: 10px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  background-color: #D9D9D9;
+                  font-weight: 500;
+                }
+                .name{
+                  font-size: 16px;
+                  font-weight: 500;
+                }
+              }
+              .text{
+                text-align: center;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 15.85px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .bread-crumbs{
+    padding-top: 50px;
+    padding-left: 50px;
+    ul{
+      display: flex;
+      list-style: none;
+      align-items: center;
+      li{
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+        a{
+          color: black;
+          text-decoration: none;
+        }
+        &::before{
+          content: url(/img/arrow.svg);
+          width: 15px;
+          display: block;
+          margin-right: 20px;
+        }
+        &:first-child::before{
+          display: none;
+        }
+      }
+    }
+  }
+</style>

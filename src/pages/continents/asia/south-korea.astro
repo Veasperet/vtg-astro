@@ -1,0 +1,283 @@
+---
+import Layout from '../../../layouts/Main.astro';
+import Quote from '../../../components/Quote.astro';
+import BreadCrumbs from "../../../components/BreadCrumbs.astro";
+import { Image } from 'astro:assets';
+//Images
+import hero from '../../../assets/img/south-korea.jpg';
+import south_korea_description from '../../../assets/img/south-korea-description.jpg';
+import sofitel_ambassador from '../../../assets/img/sofitel ambassador.jpg';
+import conrad_seoul from '../../../assets/img/conrad seoul.jpg';
+import nostalgia from '../../../assets/img/nostalgia.jpg';
+import south_korea_1 from '../../../assets/img/south-korea-1.jpg';
+import south_korea_2 from '../../../assets/img/south-korea-2.jpg';
+import south_korea_3 from '../../../assets/img/south-korea-3.jpg';
+import south_korea_4 from '../../../assets/img/south-korea-4.jpg';
+import south_korea_5 from '../../../assets/img/south-korea-5.jpg';
+import south_korea_6 from '../../../assets/img/south-korea-6.jpg';
+import south_korea from '../../../assets/img/south-korea.jpg';
+
+
+---
+
+<Layout
+        title="Южная Корея"
+        heroImg={hero}
+        heroTitle="Добро пожаловать в <br> Южную Корею!"
+        textCenter={false}
+>
+    <BreadCrumbs />
+    <section id="about">
+        <div class="container">
+            <h5 class="text-center">Южная Корея – это страна, которая завораживает своей уникальностью и многогранностью. Каждый, кто хотя бы раз посетил эту удивительную страну, навсегда сохраняет в сердце яркие впечатления и теплые воспоминания. Чем же она так уникальна?</h5>
+            <div class="row">
+                <div class="text right-gap">
+                    <p class="text-justify">
+                        <b>Богатая культура и традиции</b><br>
+                        Южная Корея обладает богатой культурной историей, уходящей корнями в глубокую древность. Традиционные храмы, дворцы и
+                        пагоды, такие как Кёнбоккун и Чонмё, переносят посетителей в далекое прошлое, открывая завораживающий мир древних
+                        корейских династий. В то же время, корейская культура славится своими фестивалями, традиционными танцами и музыкой,
+                        которые продолжают передаваться из поколения в поколение.<br><br>
+                        <b>Впечатляющие природные пейзажи</b><br>
+                        Южная Корея удивляет разнообразием своих природных пейзажей. Великолепные горные хребты Сораксан и Чирисан, живописные
+                        побережья Восточного и Желтого морей, изумрудные острова, такие как Чеджу, – все это создает неповторимую картину
+                        природного богатства страны. В любое время года природа Кореи способна удивлять и восхищать своей красотой.
+                    </p>
+                </div>
+                <div class="img">
+                    <Image src={south_korea_1} alt=""/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="img right-gap">
+                    <Image src={south_korea_2} alt=""/>
+                </div>
+                <div class="text">
+                    <p class="text-justify">
+                        <b>Богатая культура и традиции</b><br>
+                        Южная Корея обладает богатой культурной историей, уходящей корнями в глубокую древность. Традиционные храмы, дворцы и
+                        пагоды, такие как Кёнбоккун и Чонмё, переносят посетителей в далекое прошлое, открывая завораживающий мир древних
+                        корейских династий. В то же время, корейская культура славится своими фестивалями, традиционными танцами и музыкой,
+                        которые продолжают передаваться из поколения в поколение.<br><br>
+                        <b>Впечатляющие природные пейзажи</b><br>
+                        Южная Корея удивляет разнообразием своих природных пейзажей. Великолепные горные хребты Сораксан и Чирисан, живописные
+                        побережья Восточного и Желтого морей, изумрудные острова, такие как Чеджу, – все это создает неповторимую картину
+                        природного богатства страны. В любое время года природа Кореи способна удивлять и восхищать своей красотой.
+                    </p>
+                </div>
+            </div>
+            <div class="gallery">
+                <h5 class="text-center">Южная Корея – это уникальное сочетание древних традиций и современных достижений, великолепной природы и динамичных
+                    мегаполисов, изысканной кухни и теплого гостеприимства. Посетив эту страну, Вы откроете для себя мир, полный ярких
+                    впечатлений и незабываемых моментов.</h5>
+                <div class="row-gallery">
+                    <div class="img">
+                        <Image src={south_korea_3} alt=""/>
+                    </div>
+                    <div class="img">
+                        <Image src={south_korea} alt=""/>
+                    </div>
+                    <div class="img">
+                        <Image src={south_korea_4} alt=""/>
+                    </div>
+                </div>
+                <div class="row-gallery">
+                    <div class="img">
+                        <Image src={south_korea_5} alt=""/>
+                    </div>
+                    <div class="img">
+                        <Image src={south_korea_6} alt=""/>
+                    </div>
+                </div>
+            </div>
+            <div class="description">
+                <h5 class="text-center">Погрузитесь в удивительный мир Южной Кореи вместе с нами и позвольте себе насладиться всеми гранями её уникальности!</h5>
+                <div class="row-description">
+                    <div class="text"><p><b>Жилье</b> в Южной Корее представляет собой уникальное сочетание традиционных и современных стилей. В крупных городах, таких
+                        как Сеул и Пусан, можно встретить как старинные ханоки (традиционные корейские дома), так и ультрасовременные высотки с
+                        апартаментами. Ханоки отличаются своими деревянными конструкциями, крытыми черепицей крышами и внутренними двориками,
+                        которые создают уютную атмосферу. Несмотря на то, что такие дома все еще встречаются, большинство городских жителей
+                        предпочитают жить в многоэтажных зданиях, которые предлагают широкий спектр удобств и услуг. <br><br>Одним из популярных типов
+                        жилья в Южной Корее являются офистели. Это многоэтажные здания, которые сочетают в себе жилые и коммерческие помещения.
+                        Офистели часто предлагают небольшие квартиры, которые идеально подходят для молодых специалистов и студентов. Они
+                        оснащены необходимыми бытовыми приборами и имеют удобное расположение рядом с транспортными узлами, магазинами и
+                        офисами. Аренда офистеля может быть намного дороже обычного жилья, но удобства и расположение компенсируют затраты. <br><br>
+                        Жилье в Южной Корее также сильно варьируется в зависимости от региона. В крупных городах стоимость аренды и покупки
+                        жилья значительно выше, чем в сельской местности. В то же время, жизнь в сельских районах предлагает больше пространства
+                        и возможность наслаждаться природой. Тем не менее, для многих южнокорейцев жизнь в городе более привлекательна благодаря
+                        развитой инфраструктуре, обилию рабочих мест и образовательных учреждений.</p></div>
+                    <Image src={south_korea_description} alt=""/>
+                </div>
+                <p class="transport text-justify"><b><a href="/continents/asia/south-korea/transfer">Транспортная система</a></b> Южной Кореи является одной из самых современных и эффективных в мире, обеспечивая удобное
+                    передвижение как по городам, так и между ними. Одним из ключевых элементов этой системы является сеть метро, которая
+                    обслуживает все крупные города, такие как Сеул, Пусан, Тэгу и Инчхон. Метро отличается высокой скоростью, точностью
+                    расписания и чистотой. В вагонах предусмотрены удобные сиденья, кондиционирование и бесплатный Wi-Fi, что делает поездки
+                    комфортными для пассажиров.<br><br>Автобусная система в Южной Корее также хорошо развита и дополняет сеть метро. В городах
+                    курсируют как обычные, так и экспресс-автобусы, которые соединяют различные районы и транспортные узлы. Междугородные
+                    автобусы связывают основные города страны, предлагая как обычные, так и люксовые варианты с широкими креслами и
+                    дополнительными удобствами. Электронные табло на остановках и мобильные приложения помогают пассажирам следить за
+                    расписанием и маршрутом автобусов.<br><br>Железнодорожная сеть Южной Кореи, управляемая компанией Korail, является важным
+                    компонентом межгородского транспорта. Особое место в ней занимает высокоскоростной поезд KTX, который соединяет Сеул с
+                    другими крупными городами, такими как Пусан, Тэджон и Кванджу. Эти поезда развивают скорость до 300 км/ч, что позволяет
+                    значительно сократить время в пути. В поездах KTX пассажирам предлагаются удобные кресла, Wi-Fi, а также возможность
+                    приобретения билетов онлайн.<br><br>Такси в Южной Корее представляют собой еще один популярный вид транспорта. Такси доступны в
+                    любое время суток и могут быть вызваны через мобильные приложения. Существует несколько типов такси, включая обычные,
+                    делюкс и международные такси, где водители говорят на английском языке.</p>
+            </div>
+        </div>
+    </section>
+    <section class="apartments">
+        <h2 class="text-center">ЛУЧШИЕ ОТЕЛИ ЮЖНОЙ КОРЕИ</h2>
+        <div class="row-apartments">
+            <a href="/continents/asia/south-korea/sofitel-ambassador">
+                <div class="parallelogram">
+                    <Image src={sofitel_ambassador} alt=""/>
+                    <div class="shadow"></div>
+                    <div class="text-right">Sofitel <br> Ambassador</div>
+                </div>
+            </a>
+            <a href="/continents/asia/south-korea/conrad-seoul">
+                <div class="parallelogram">
+                    <Image src={conrad_seoul} alt="" style="width: 750px; height: auto;top: -130px;"/>
+                <div class="shadow"></div>
+                <div class="text-right">Conrad Seoul</div>
+            </div>
+            </a>
+           <a href="/continents/asia/south-korea/nostalgia">
+               <div class="parallelogram" >
+                   <Image src={nostalgia} alt=""/>
+                   <div class="shadow"></div>
+                   <div class="text-right">Nostalgia</div>
+               </div>
+           </a>
+        </div>
+    </section>
+</Layout>
+
+<style lang="scss">
+  #about{
+    padding: 100px 0 50px 0 ;
+    .container{
+      max-width: 1170px;
+      margin: auto;
+      .row{
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        .right-gap{
+          margin-right: 30px;
+        }
+        .img{
+          min-width: 541px;
+          height: 381px;
+          overflow: hidden;
+          img{
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+      .gallery {
+        margin-top: 60px;
+        h5{
+          margin-bottom: 50px;
+        }
+        .row-gallery{
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          .img{
+            width: 380px;
+            height: 230px;
+            margin-bottom: 15px;
+            margin-right: 15px;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: auto;
+            }
+            &:last-child{
+              margin-right: 0;
+            }
+          }
+        }
+      }
+      .description{
+        h5{
+          font-weight: 700;
+          margin-bottom: 90px;
+          margin-top: 10px;
+        }
+        .row-description{
+          display: flex;
+          .text{
+            flex: 1;
+            padding-right: 40px;
+            text-align: justify;
+          }
+          img{
+            flex: 1;
+          }
+
+        }
+        .transport{
+          margin-top: 42px;
+        }
+      }
+    }
+  }
+  .apartments{
+    overflow: hidden;
+    padding-bottom: 170px;
+    .row-apartments{
+      display: flex;
+      justify-content: center;
+      margin-top: 58px;
+      .parallelogram{
+        width: 630px;
+        height: 767px;
+        transform: skew(-10deg);
+        background: black;
+        overflow: hidden;
+        position: relative;
+        margin-right: 30px;
+        cursor: pointer;
+        img{
+          transition: all .5s ease-out;
+          transform: skew(10deg) translateX(-50%);
+          height: 100%;
+          z-index: 1;
+          position: absolute;
+          left: 50%;
+          width: auto;
+        }
+        .shadow{
+          background-color: #00000042;
+          z-index: 2;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+        }
+        .text-right{
+          text-shadow: 0px 0px 20px #000000;
+          position: absolute;
+          top: 50px;
+          right: 70px;
+          color: white;
+          z-index: 3;
+          font-size: 16px;
+          font-weight: 700;
+          transform: skew(10deg);
+          box-shadow: 20px;
+        }
+        &:hover{
+          img{
+            transform: skew(10deg) translateX(-50%) scale(1.2);
+          }
+        }
+      }
+    }
+  }
+
+</style>

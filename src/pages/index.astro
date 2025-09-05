@@ -1,0 +1,594 @@
+---
+import Quote from '../components/Quote.astro';
+import Layout from '../layouts/Main.astro';
+import {Image} from 'astro:assets';
+
+// Images
+import hero from '../assets/img/hero-main.jpg'
+import photo_1 from '../assets/img/photo-1.jpg';
+import photo_2 from '../assets/img/photo-2.jpg';
+import photo_3 from '../assets/img/photo-3.jpg';
+import hotel from '../assets/img/hotel.svg';
+import car from '../assets/img/car.svg';
+import plane from '../assets/img/plane.svg';
+import phone from '../assets/img/phone.svg';
+import fast_track from '../assets/img/fast-track.svg';
+import tourism from '../assets/img/tourism.svg';
+import at_your_service_1 from '../assets/img/at-your-service-1.jpg';
+import at_your_service_2 from '../assets/img/at-your-service-2.jpg';
+import at_your_service_3 from '../assets/img/at-your-service-3.jpg';
+import at_your_service_4 from '../assets/img/at-your-service-4.jpg';
+import at_your_service_5 from '../assets/img/at-your-service-5.jpg';
+import at_your_service_6 from '../assets/img/at-your-service-6.jpg';
+import at_your_service_7 from '../assets/img/at-your-service-7.jpg';
+import at_your_service_8 from '../assets/img/at-your-service-8.jpg';
+import at_your_service_9 from '../assets/img/at-your-service-9.jpg';
+import lands from '../assets/img/lands.png';
+---
+<Layout
+    title="Limotis Travel – ваш надежный партнер в мире элитных путешествий"
+    heroImg = {hero}
+    heroTitle="Limotis Travel"
+    showButton={true}
+>
+        <section id="who-we">
+                <div class="container">
+                    <h3>ПРЕМИУМ КОМФОРТ БЕЗ КОМПРОМИССОВ</h3>
+                    <div class="row">
+                        <div class="col-1">
+                            <h4>Кто мы?</h4>
+                            <span>Мы команда, которая собрала 20+ летний опыт работы с премиальным сегментом, идеальный сервис и партнерские программы с
+                            отелями, авиакомпаниями и сотней других организаций. Команда профессиональных менеджеров решит любую проблему или
+                            реализует ваше желание. Где бы вы не находились.</span><br>
+                            <span><b>Конфиденциально: </b>Мы ценим вашу приватность. Не задаем вопросов, не разглашаем ваших планов и молча выполняем желания. С нами клиенты
+                            чувствуют себя в безопасности.</span><br>
+                            <span><b>Безупречно: </b>Менеджеры виртуозно выполняют любую задачу. Точно в срок, без ошибок или неточностей. Мы заботимся о каждой детали, продумываем все мелочи, заботимся обо всех особенностях.</span><br>
+                            <span><b>Быстро:</b> Мы начинаем решать новую задачу сразу после её поступления, поэтому клиенты получают решение, зачастую в тот же день.
+                            Для нас не проблема организовать путешествие за один день или запланировать сложный перелет за несколько часов.</span><br>
+                            <span>Мы начали новую эпоху консьерж-услуг высшего уровня. За это время сотни клиентов открыли для себя бизнес-джеты,
+                                услуги
+                                класса «люкс» и VIP-ассистировали по всему миру.<br><br>
+                                Для вас работает команда из профессионалов, готовых реализовать самые сложные или необычные желания. Заказать
+                                частный
+                                самолет в новогоднюю ночь, забронировать необитаемый остров под шумную вечеринку – в нашем лексиконе нет слова
+                                «невозможно»!<br><br>
+                                Уже больше 20 лет мы оказываем премиальные услуги для клиентов со всего мира. Бизнес-элита, мировые звезды,
+                                предприниматели и компании – нам доверяют рабочие задачи, планирование личных событие и курирование целых семей.
+                                Организуем премиальное размещение, частые перелеты, медицинские путешествия, пакетные туры и точечные задачи для
+                                вашего
+                                комфорта.</span>
+
+                        </div>
+                        <div class="col-2">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                    </div>
+                </div>
+
+            </section>
+        <Quote />
+        <section id="services">
+            <div class="container">
+                <h3>Наши услуги</h3>
+                <div class="row">
+                    <div class="col">
+                        <Image src={hotel} alt=""/>
+                        <h4>Аренда элитного жилья <br>в любой точке мира</h4>
+                        <p>Сотрудничаем с отелями, виллами апартаментами и другими VIP-размещениями. Наши клиенты наслаждаются жизнью по всему
+                        миру, диктуя свои правила комфорта.</p>
+                    </div>
+                    <div class="col middle-col">
+                        <Image src={car} alt=""/>
+                        <h4>Аренда автомобилей с водителями, яхт и других средств передвижения</h4>
+                        <p>Наши клиенты не стоят в пробках и не ищут такси в мегаполисах. Профессионалы встречают их около трапов или отелей и
+                        везут по нужному маршруту.</p>
+                    </div>
+                    <div class="col">
+                        <Image src={plane} alt=""/>
+                        <h4>Бронирование перелетов первым<br> классом или аренда джетов</h4>
+                        <p>Сотрудничаем с отелями, апартаментами, виллами и другими VIP-размещениями. Наши клиенты наслаждаются жизнью по всему
+                        миру, диктуя свои правила комфорта.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <Image src={phone} alt=""/>
+                        <h4>Планирование путешествий и командировок</h4>
+                        <p>От выхода из дома до радостных фотографий из поездки – организовываем все. Подбираем премиальное размещение, бронируем
+                        авиабилеты и досуг, даже заботимся о том, чтобы повар готовил ваши любимые блюда</p>
+                    </div>
+                    <div class="col middle-col">
+                        <Image src={fast_track} alt=""/>
+                        <h4>Забота в аэропортах, трансферы и фаст-траки</h4>
+                        <p>Клиенты спешат, и мы помогаем им не опаздывать. Не стоят в очередях, не ждут регистрации или багажа. Они занимаются
+                        своими делами, пока мы заботимся о мелочах</p>
+                    </div>
+                    <div class="col">
+                        <Image src={tourism} alt=""/>
+                        <h4>Оздоровительный туризм</h4>
+                        <p>Новое, но уже востребованное направление, которое оценили наши клиенты. Организуем профилактическое лечение, плановые
+                        операции или срочное обслуживание по всему миру</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="gallery">
+            <h3>Популярные направления</h3>
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <!--<li class="splide__slide"><Image src={photo_1} alt=""/></li>-->
+                        <!--<li class="splide__slide"><Image src={photo_2} alt=""/></li>-->
+                        <!--<li class="splide__slide"><Image src={photo_3} alt=""/></li>-->
+                        <li class="splide__slide"><Image src={photo_1} alt=""/></li>
+                        <li class="splide__slide"><Image src={photo_2} alt=""/></li>
+                        <li class="splide__slide"><Image src={photo_3} alt=""/></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="how-we-work">
+            <h3>Как мы работаем</h3>
+            <div class="description">
+                <p>Туристическая компания – это пропуск в мир премиального обслуживания. Забронировать частный самолет, организовать экзотический
+                отпуск, отправиться в частую клинику на wellness или просто доставить редкие цветы в другой конец мира. Это все делают
+                наши менеджеры.</p>
+            </div>
+            <div class="container">
+                <div class="step">
+                    <div class="number">1</div>
+                    <div class="text left"><p>Оставьте заявку на сотрудничество, и менеджер расскажет, какие условия мы предлагаем.</p></div>
+                </div>
+                <div class="step">
+                    <div class="number">2</div>
+                    <div class="text right">
+                        <p>Вы можете оформить постоянное членство или использовать наши услуги для разовых задач. Как вам комфортно.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="number">3</div>
+                    <div class="text left">
+                        <p>Если вы собираетесь работать с нами на постоянной основе, то закрепляем персонального менеджера. Он изучит ваши
+                        предпочтения, вкусы и привычки, чтобы не задавать лишних вопросов во время работы. Менеджер будет на связи 24/365 и в
+                        любой момент готов выполнить новую задачу.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="number">4</div>
+                    <div class="text right">
+                        <p>Клиенты, которые только пробуют услуги VIP-консьержа, получают такое же внимание. Мы изучаем все требования и пожелания,
+                        продумывая услугу.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="number">5</div>
+                    <div class="text left">
+                        <p>Мы предоставляем отчет о всех расходах и тратах – чтобы вы могли контролировать работу. Нам нечего скрывать от клиентов.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="at-your-service">
+            <h3 class="text-center">К Вашим услугам</h3>
+            <div class="container">
+                <div class="row img-right">
+                    <div class="text">
+                        <h4><a rel="nofollow" href="/services/individual-travels">Индивидуальные путешествия под ключ</a></h4>
+                        <p class="text-justify">Команда профессиональных менеджеров поможет организовать уникальное путешествие в самую дальнюю точку планеты. Завтрак с
+                        жирафами в Африке, дайвинг в Тихом океане, тишина Тибета, тайны Азии или исторические маршруты Европы – у нас есть
+                        решение для любого желания.</p>
+                    </div>
+                    <Image src={at_your_service_1} alt=""/>
+                </div>
+                <div class="row img-left">
+                    <Image src={at_your_service_2} alt=""/>
+                    <div class="text">
+                        <h4><a rel="nofollow" href="/services/premium-accommodation">Бронирование премиального размещения по всему миру</a></h4>
+                        <p class="text-justify">Планируете деловую поездку или хотите отдохнуть? Команда профессионалов Limotis собрала целую коллекцию
+                        премиум-размещений по всему миру, которая доступна вам. <br>
+                        Мы знаем, что вы ждете от премиального обслуживания и с ювелирной точностью работаем с каждой заявкой. Конфиденциально,
+                        с безупречным сервисом и заботой о важных мелочах</p>
+                        <div class="top-line"></div>
+                        <div class="bottom-line"></div>
+                    </div>
+                </div>
+                <div class="row img-right">
+                    <div class="text">
+                        <h4><a rel="nofollow" href="/services/private-flights">Частные перелеты</a></h4>
+                        <p class="text-justify">Для наших клиентов открыт весь мир, ведь мы легко организовываем перелет в любую точку планеты. Мировые столицы,
+                        отдаленные деревни, частные острова или редкие направления – доставим вас куда угодно.</p>
+                    </div>
+                    <Image src={at_your_service_3} alt=""/>
+                </div>
+                <div class="row img-left">
+                    <Image src={at_your_service_4} alt=""/>
+                    <div class="text">
+                        <h4><a rel="nofollow" href="/services/transfer">Трансфер и аренда авто с водителем по всему миру</a></h4>
+                        <p class="text-justify">Сервис начинается у трапа, где вас встречает личный водитель на автомобиле представительского класса. Команда Limotis
+                        найдет для вас профессионала и премиум автомобиль в любой точке планеты.
+                        Мы понимаем, каким должен быть VIP-сервис и проработали каждую деталь.</p>
+                        <div class="top-line"></div>
+                        <div class="bottom-line"></div>
+                    </div>
+                </div>
+                <div class="row img-right">
+                    <div class="text">
+                        <h4><a rel="nofollow" href="/services/yachts">Аренда яхт</a></h4>
+                        <p class="text-justify">Приватный отдых в открытом море или просто комфортное путешествие по воде – аренда яхта всегда отличная идея. Клиенты
+                        обращаются к нам за романтичной поездкой, приключениями с друзьями и просто уединением. И мы виртуозно организовываем
+                        все.</p>
+                    </div>
+                    <Image src={at_your_service_5} alt=""/>
+                </div>
+                <div class="row img-left">
+                    <Image src={at_your_service_6} alt=""/>
+                    <div class="text">
+                        <h4><a rel="nofollow" href="/services/vip-concierge">ВИП-консьерж</a></h4>
+                        <p class="text-justify">Каждый день команда менеджеров делает все для вашего комфорта. 24 часа в сутки, 365 дней в году мы заботимся о желаниях
+                        клиентов. Для нас нет невозможных задач или сроков – любую задачу мы решаем быстро и на уровне премиум.</p>
+                        <div class="top-line"></div>
+                        <div class="bottom-line"></div>
+                    </div>
+                </div>
+                <div class="row img-right">
+                    <div class="text">
+                        <h4><a rel="nofollow" href="/services/vip-services">ВИП-услуги в аэропортах - Фаст-трак</a></h4>
+                        <p class="text-justify">Не ждите – у вас ведь есть дела поважнее. <br>
+                        Как же утомляют досмотры, регистрации и другие процедуры в аэропорту. Согласны. Поэтому предлагаем вам фаст-трак,
+                        который сократит путь до самолета в несколько раз.</p>
+                    </div>
+                    <Image src={at_your_service_7} alt=""/>
+                </div>
+                <div class="row img-left">
+                    <Image src={at_your_service_8} alt=""/>
+                    <div class="text">
+                        <h4><a rel="nofollow" href="/services/health-tourism">Оздоровительный туризм</a></h4>
+                        <p class="text-justify">Наши клиенты заботятся о своем здоровье, и мы им в этом помогаем – в любой точке планеты. Плановые операции, общие
+                        осмотры и просто wellness-туризм. Мы знаем, как организовать любую медицинскую поездку. Даже с закрытыми границами.</p>
+                        <div class="top-line"></div>
+                        <div class="bottom-line"></div>
+                    </div>
+                </div>
+                 <div class="row img-right">
+                    <div class="text">
+                        <h4><a rel="nofollow" href="/services/exclusive-purchases">Эксклюзивные покупки</a></h4>
+                        <p class="text-justify">Подарок возлюбленной? Редкая вещь для коллеги или просто что-то коллекционное для себя? Наши менеджеры смогут найти для
+                        вас все. Мы сотрудничаем с крупнейшими магазинами, универмагами компаниями по всему миру, поэтому клиенты Limotis
+                        получают все товары напрямую. Без ожидания и посредников.</p>
+                    </div>
+                     <Image src={at_your_service_9} alt=""/>
+                </div>
+            </div>
+        </section>
+        <section id="lands">
+            <h2>Мы доступны по всему миру</h2>
+            <Image src={lands} alt=""/>
+        </section>
+</Layout>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var splide = new Splide('.splide',{
+            type: "loop",
+            pagination: false,
+            arrows: false,
+            gap: "6%",
+            focus: 'center',
+            perPage: 2.5,
+        });
+        splide.mount();
+    });
+</script>
+<style lang="scss">
+    #who-we{
+    padding: 120px 0;
+    .container{
+        max-width: 1150px;
+        margin: auto;
+        h3{
+            text-align: center;
+            margin-bottom: 70px;
+        }
+        .row{
+            display: flex;
+            text-align: justify;
+
+            .col-1{
+                width: 57%;
+                display: flex;
+                flex-direction: column;
+                span{
+                    text-align: justify;
+                    font-size: 14px !important;
+                }
+            }
+            .col-2{
+                width: 43%;
+                padding-left: 40px;
+                .img{
+                    width: 100%;
+                    height: 100%;
+                    background-size: cover;
+                    background-position: center;
+                    background-image: url('/img/operators.jpg');
+                    background-repeat: no-repeat;
+                    margin-bottom: 55px;
+                }
+            }
+        }
+    }
+
+}
+#quote{
+    padding: 40px;
+    background-color: #1F2838;
+    color: white;
+    p{
+        font-size: 24px;
+    }
+    .container{
+       margin-left: auto;
+       margin-right: auto;
+       max-width: 1000px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+    }
+}
+#services{
+    text-align: center;
+    padding: 105px 0;
+    .container{
+        max-width: 1080px;
+        margin: auto;
+        .row{
+            display: flex;
+            margin-top: 50px;
+        }
+        .col{
+            flex: 1;
+            padding-top: 25px;
+            padding-bottom: 50px;
+            p{
+                text-align: justify !important;
+            }
+            h4{
+                height: 40px;
+                margin-bottom: 15px;
+            }
+            img{
+                height: 95px;
+                margin-bottom: 15px;
+            }
+        }
+        .middle-col{
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .col:first-child{
+            padding-right: 40px;
+        }
+        .col:last-child{
+            padding-left: 40px;
+        }
+    }
+}
+#gallery{
+    padding: 100px 0;
+    text-align: center;
+    .splide{
+        margin-top: 150px;
+        height: 338px;
+        .splide__slide{
+            display: flex;
+            justify-content: center;
+            max-width: 600px;
+            img{
+                transition: 0.3s;
+                width: 100%;
+                z-index: 1;
+                height: auto;
+            }
+            &::after{
+                content: '';
+                width: 100%;
+                height: 100%;
+                display: block;
+                z-index: 2;
+                position: absolute;
+                background-color: #00000066;
+                transition: 0.3s;
+            }
+
+        }
+        .is-active{
+            img{
+                transform: scale(1.2);
+
+            }
+            &::after {
+                background-color: #00000000;
+                transform: scale(1.2);
+            }
+        }
+        .splide__track{
+            overflow: visible;
+        }
+    }
+}
+#at-your-service{
+    .container{
+        margin-top: 30px;
+        max-width: 1138px;
+        margin-left: auto;
+        margin-right: auto;
+        .row{
+            display: flex;
+            align-items: center;
+            margin-top: 45px;
+            position: relative;
+            &:first-child{
+                margin-top: 0;
+            }
+            &.img-right{
+                justify-content: right;
+                img{
+                    margin-left: 25px;
+                }
+                .text{
+                    &:before,
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        border: 1px solid #1F2838;
+                        width: calc(100% + 100px);
+                        height: calc(100% + 20px);
+                        top: -10px;
+                        left: -10px;
+                        box-sizing: border-box;
+                        z-index: -1;
+                    }
+                    &:after {
+                        top: -25px;
+                        left: -20px;
+                    }
+                }
+            }
+            &.img-left{
+                justify-content: left;
+                img{
+                    margin-right: 25px;
+                }
+                .text{
+                    &:before,
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        border: 1px solid #1F2838;
+                        border-right: 0;
+                        width: calc(100% + 60px);
+                        height: calc(100% + 20px);
+                        top: -10px;
+                        left: -20px;
+                        box-sizing: border-box;
+                        z-index: -1;
+                    }
+                    &:after {
+                        top: -25px;
+                        left: -30px;
+                        width: calc(100% + 70px);
+                        height: calc(100% + 20px);
+                    }
+                    .top-line,.bottom-line{
+                        width: 1px;
+                        height: 100%;
+                        border-right: 1px solid #1F2838;
+                        position: absolute;
+                    }
+                    .top-line{
+                        top: calc(0px - 100% - 25px);
+                        right: calc(-70px + 30px);
+                    }
+                    .bottom-line{
+                        top: calc(100% - 5px);
+                        right: calc(-70px + 30px);
+                    }
+                }
+            }
+            .text{
+                max-width: 620px;
+                height: 212px;
+                padding: 34px 0 0 16px ;
+                position: relative;
+                box-sizing: border-box;
+                h4{
+                    margin-bottom: 20px;
+                }
+            }
+            img{
+                z-index: 2;
+
+            }
+        }
+    }
+}
+#how-we-work{
+    text-align: center;
+    padding: 200px 0 50px 0;
+    .description{
+        margin-top: 20px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        margin-bottom: 120px;
+    }
+    .container{
+        max-width: 900px;
+        margin: auto;
+        .step{
+            position: relative;
+            height: 180px;
+            // margin-bottom: 180px;
+            .number{
+                background-color: #1F2838;
+                color: #fff;
+                font-size: 24px;
+                font-weight: 700;
+                width: 45px;
+                height: 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 1;
+            }
+            .text{
+                width: 45%;
+                text-align: justify;
+                transform: translateY(-15%);
+                &.left{
+                    margin-right: auto;
+                }
+                &.right{
+                    margin-left: auto;
+                }
+            }
+            &:first-child .text,&:last-child .text{
+                transform: none;
+            }
+            &:last-child::after{
+                display: none;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                width: 2px;
+                background-color: #1F2838;
+                top: 0;
+                // bottom: -50%;
+                left: 50%;
+                height: 180px;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+#lands{
+    padding: 150px 0;
+    text-align: center;
+    img{
+        margin-top: 80px;
+        max-width: 1170px;
+        width: 100%;
+    }
+}
+</style>
